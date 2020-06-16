@@ -97,7 +97,7 @@ public class ApiClient {
         this.json = new JSON();
 
         // Set default User-Agent.
-        setUserAgent("java-sdk/19.11");
+        setUserAgent("java-sdk/20.6");
 
         // Set connection timeout
         setConnectTimeout(configuration.getTimeout());
@@ -116,7 +116,7 @@ public class ApiClient {
     }
 
     /**
-     * Get server URL, default value is https://api-qa.groupdocs.cloud/v1.0
+     * Get server URL, default value is https://api.groupdocs.cloud/v1.0
      *
      * @return Server URL
      */

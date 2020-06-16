@@ -87,7 +87,7 @@ public class Configuration {
     }
 
     /**
-     * Gets API base URL, default value is https://api-qa.groupdocs.cloud
+     * Gets API base URL, default value is https://api.groupdocs.cloud
      *
      * @return API base URL
      */
@@ -123,7 +123,7 @@ public class Configuration {
     }
 
     /**
-     * Gets Server URL e.g. https://api-qa.groupdocs.cloud/v1.0
+     * Gets Server URL e.g. https://api.groupdocs.cloud/v1.0
      *
      * @return Server URL
      */

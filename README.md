@@ -22,7 +22,7 @@ repositories {
 ...
 dependencies {
     ...
-    implementation 'com.groupdocs:groupdocs-parser-cloud:19.11'
+    implementation 'com.groupdocs:groupdocs-parser-cloud:20.6'
 }
 ```
 

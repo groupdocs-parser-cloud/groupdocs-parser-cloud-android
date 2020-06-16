@@ -33,6 +33,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import com.groupdocs.cloud.parser.model.Rectangle;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
@@ -47,6 +48,18 @@ public class Image {
 
   @SerializedName("downloadUrl")
   private String downloadUrl = null;
+
+  @SerializedName("pageIndex")
+  private Integer pageIndex = null;
+
+  @SerializedName("rotation")
+  private Double rotation = null;
+
+  @SerializedName("fileFormat")
+  private String fileFormat = null;
+
+  @SerializedName("rectangle")
+  private Rectangle rectangle = null;
 
   public Image path(String path) {
     this.path = path;
@@ -84,6 +97,78 @@ public class Image {
     this.downloadUrl = downloadUrl;
   }
 
+  public Image pageIndex(Integer pageIndex) {
+    this.pageIndex = pageIndex;
+    return this;
+  }
+
+   /**
+   * Gets or sets the index of the page.
+   * @return pageIndex
+  **/
+  @ApiModelProperty(value = "Gets or sets the index of the page.")
+  public Integer getPageIndex() {
+    return pageIndex;
+  }
+
+  public void setPageIndex(Integer pageIndex) {
+    this.pageIndex = pageIndex;
+  }
+
+  public Image rotation(Double rotation) {
+    this.rotation = rotation;
+    return this;
+  }
+
+   /**
+   * Gets or sets the rotation of the image in degrees.
+   * @return rotation
+  **/
+  @ApiModelProperty(value = "Gets or sets the rotation of the image in degrees.")
+  public Double getRotation() {
+    return rotation;
+  }
+
+  public void setRotation(Double rotation) {
+    this.rotation = rotation;
+  }
+
+  public Image fileFormat(String fileFormat) {
+    this.fileFormat = fileFormat;
+    return this;
+  }
+
+   /**
+   * Gets or sets the image file format.
+   * @return fileFormat
+  **/
+  @ApiModelProperty(value = "Gets or sets the image file format.")
+  public String getFileFormat() {
+    return fileFormat;
+  }
+
+  public void setFileFormat(String fileFormat) {
+    this.fileFormat = fileFormat;
+  }
+
+  public Image rectangle(Rectangle rectangle) {
+    this.rectangle = rectangle;
+    return this;
+  }
+
+   /**
+   * Gets or sets the rectangle area of the image.
+   * @return rectangle
+  **/
+  @ApiModelProperty(value = "Gets or sets the rectangle area of the image.")
+  public Rectangle getRectangle() {
+    return rectangle;
+  }
+
+  public void setRectangle(Rectangle rectangle) {
+    this.rectangle = rectangle;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -95,12 +180,16 @@ public class Image {
     }
     Image image = (Image) o;
     return Objects.equals(this.path, image.path) &&
-        Objects.equals(this.downloadUrl, image.downloadUrl);
+        Objects.equals(this.downloadUrl, image.downloadUrl) &&
+        Objects.equals(this.pageIndex, image.pageIndex) &&
+        Objects.equals(this.rotation, image.rotation) &&
+        Objects.equals(this.fileFormat, image.fileFormat) &&
+        Objects.equals(this.rectangle, image.rectangle);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(path, downloadUrl);
+    return Objects.hash(path, downloadUrl, pageIndex, rotation, fileFormat, rectangle);
   }
 
 
@@ -111,6 +200,10 @@ public class Image {
     
     sb.append("    path: ").append(toIndentedString(path)).append("\n");
     sb.append("    downloadUrl: ").append(toIndentedString(downloadUrl)).append("\n");
+    sb.append("    pageIndex: ").append(toIndentedString(pageIndex)).append("\n");
+    sb.append("    rotation: ").append(toIndentedString(rotation)).append("\n");
+    sb.append("    fileFormat: ").append(toIndentedString(fileFormat)).append("\n");
+    sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
     sb.append("}");
     return sb.toString();
   }

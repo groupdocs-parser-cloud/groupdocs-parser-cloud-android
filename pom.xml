@@ -5,7 +5,7 @@
     <artifactId>groupdocs-parser-cloud</artifactId>
     <packaging>jar</packaging>
     <name>groupdocs-parser-cloud</name>
-    <version>19.11</version>
+    <version>20.6</version>
     <url>https://github.com/groupdocs-parser-cloud/groupdocs-parser-cloud-java</url>
     <description>Java library for communicating with the GroupDocs.Parser Cloud API</description>
     <scm>

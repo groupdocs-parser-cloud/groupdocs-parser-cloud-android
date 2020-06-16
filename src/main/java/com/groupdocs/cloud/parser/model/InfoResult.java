@@ -52,6 +52,9 @@ public class InfoResult {
   @SerializedName("pageCount")
   private Integer pageCount = null;
 
+  @SerializedName("encoding")
+  private String encoding = null;
+
   public InfoResult fileType(FileType fileType) {
     this.fileType = fileType;
     return this;
@@ -106,6 +109,24 @@ public class InfoResult {
     this.pageCount = pageCount;
   }
 
+  public InfoResult encoding(String encoding) {
+    this.encoding = encoding;
+    return this;
+  }
+
+   /**
+   * Gets or sets the encoding.
+   * @return encoding
+  **/
+  @ApiModelProperty(value = "Gets or sets the encoding.")
+  public String getEncoding() {
+    return encoding;
+  }
+
+  public void setEncoding(String encoding) {
+    this.encoding = encoding;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -118,12 +139,13 @@ public class InfoResult {
     InfoResult infoResult = (InfoResult) o;
     return Objects.equals(this.fileType, infoResult.fileType) &&
         Objects.equals(this.size, infoResult.size) &&
-        Objects.equals(this.pageCount, infoResult.pageCount);
+        Objects.equals(this.pageCount, infoResult.pageCount) &&
+        Objects.equals(this.encoding, infoResult.encoding);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(fileType, size, pageCount);
+    return Objects.hash(fileType, size, pageCount, encoding);
   }
 
 
@@ -135,6 +157,7 @@ public class InfoResult {
     sb.append("    fileType: ").append(toIndentedString(fileType)).append("\n");
     sb.append("    size: ").append(toIndentedString(size)).append("\n");
     sb.append("    pageCount: ").append(toIndentedString(pageCount)).append("\n");
+    sb.append("    encoding: ").append(toIndentedString(encoding)).append("\n");
     sb.append("}");
     return sb.toString();
   }
