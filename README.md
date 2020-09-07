@@ -67,12 +67,4 @@ public class ApiExample {
 ## Licensing
 All GroupDocs.Parser Cloud SDKs are licensed under [MIT License](LICENSE).
 
-## Resources
-+ [**Website**](https://www.groupdocs.cloud)
-+ [**Product Home**](https://products.groupdocs.cloud/parser)
-+ [**Documentation**](https://docs.groupdocs.cloud/display/parsercloud/Home)
-+ [**Free Support Forum**](https://forum.groupdocs.cloud/c/parser)
-+ [**Blog**](https://blog.groupdocs.cloud/category/parser)
-
-## Contact Us
-Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.groupdocs.cloud/c/parser).
+[Home](https://www.groupdocs.cloud/) | [Docs](https://docs.groupdocs.cloud/parser/) | [Demos](https://products.groupdocs.app/parser/family) | [API Reference](https://apireference.groupdocs.cloud/parser/) | [Blog](https://blog.groupdocs.cloud/category/parser/) | [Free Support](https://forum.groupdocs.cloud/c/parser) | [Free Trial](https://purchase.groupdocs.cloud/trial)
